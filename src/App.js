@@ -1,8 +1,10 @@
-import "./App.css";
-import { Todo } from "./todo";
+// import "./App.css";
+import { Practice } from "./Practice";
+
 
 function App() {
-  return <Todo />;
+  return <Practice/>
+  
 }
 
 export default App;
