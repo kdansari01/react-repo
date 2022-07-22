@@ -23,10 +23,9 @@ body{
 .heading{
   position: absolute;
   top: 40px;
-  left: 490px;
+  left: 520px;
   text-align: center;
   font-size: 40px;
-
 }
 
 .list{
@@ -41,18 +40,26 @@ position: absolute;
 left: 500px;
   /* display:flex ; */
   text-align: center;
-  min-width: 300px;
+  width: 400px;
   min-height: 200px;
-  border: 2px solid black;
+  border: 1px solid black;
+  font-family: 'Times New Roman' ;
+  font-weight: bold;
+  border-radius: 40px;
+  box-shadow: 10px 10px 20px black;
+
 
 }
 .buttons{
   position: absolute;
   top: 350px;
   left: 580px;
+  padding: 10px 2px;
   /* justify-content: space-between; */
 }
 .btn{
   width: 80px;
-  height: 40px;
+  min-height: 40px;
+  font-size: 40px;
+  font-weight: bold;
 }
