@@ -70,6 +70,21 @@ export const SingUp = () => {
        localStorage.setItem("userData",JSON.stringify([...olderUserData, inpData]))
        
       }
+    if(localStorage.getItem(inpData)){
+      alert("signUp successfull")
+    }
+      //clear form after sign up
+     setInpData({ 
+      firstName: "",
+      lastName: "",
+      userName: "",
+      Dob: "",
+      email: "",
+      number: "",
+      password: "",
+      confirmPassword: "",
+     }) 
+
       
 
   };
@@ -83,7 +98,7 @@ export const SingUp = () => {
         src="https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&w=400"
         className="bd-placeholder-img"
       /> */}
-      <form className="row g-3 needs-validation singupform" novalidate>
+      <form className="row g-3 needs-validation singupform" noValidate>
         <div>
           <h1 className="container-fluid headsingup">SignUp</h1>
         </div>
@@ -125,7 +140,7 @@ export const SingUp = () => {
           
         </div>
         <div className="col-md-6">
-          <label for="validationCustomUsername" className="form-label">
+          <label htmlFor="validationCustomUsername" className="form-label">
             Username
           </label>
           <div className="input-group has-validation">
@@ -147,7 +162,7 @@ export const SingUp = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <label for="validationCustom03" className="form-label">
+          <label htmlFor="validationCustom03" className="form-label">
             DOB
           </label>
           <input
@@ -163,7 +178,7 @@ export const SingUp = () => {
           <div className="invalid-feedback">choose a valid date of birth</div>
         </div>
         <div className="col-md-6">
-          <label for="validationCustom03" className="form-label">
+          <label htmlFor="validationCustom03" className="form-label">
             email
           </label>
           <input
@@ -181,7 +196,7 @@ export const SingUp = () => {
         </div>
 
         <div className="col-md-6">
-          <label for="validationCustom05" className="form-label">
+          <label htmlFor="validationCustom05" className="form-label">
             mobile number
           </label>
           <input
@@ -198,7 +213,7 @@ export const SingUp = () => {
     
         </div>
         <div className="col-md-6">
-          <label for="validationCustom05" className="form-label">
+          <label htmlFor="validationCustom05" className="form-label">
             Password
           </label>
           <input
@@ -214,7 +229,7 @@ export const SingUp = () => {
           <div className="invalid-feedback">password is required</div>
         </div>
         <div className="col-md-6">
-          <label for="validationCustom05" className="form-label">
+          <label htmlFor="validationCustom05" className="form-label">
             Confirm Password
           </label>
           <input
@@ -242,7 +257,7 @@ export const SingUp = () => {
         </div>
         <div>
           <label className="form-check-label" for="invalidCheck">
-            <NavLink className="nav-link forgetpass" to="/Login"> Already a user</NavLink>
+          already a user?<NavLink className="nav-link forgetpass" to="/Login">login</NavLink>
           </label>
           </div>
           

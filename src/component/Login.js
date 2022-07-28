@@ -47,10 +47,12 @@ export const Login = () => {
             // redirect home
             setGlobal(prev=>({...prev, user:userData, isLogin:true }))
             navigate('/')
+            // alert("login successfull")
             
         }
+        
+      }
     }
-  }
  
 
   };
@@ -58,12 +60,12 @@ export const Login = () => {
 
   return (
     <>
-    <form className="row g-3 needs-validation singupform" novalidate>
+    <form className="row g-3 needs-validation singupform" noValidate>
       <div>
         <h1 className="container-fluid headsingup">Login</h1>
       </div>
        <div className="col-md-6">
-          <label for="validationCustomUsername" className="form-label">
+          <label htmlFor="validationCustomUsername" className="form-label">
             Username
           </label>
           <div className="input-group has-validation">
@@ -85,7 +87,7 @@ export const Login = () => {
           </div>
         </div>
         <div className="col-md-6">
-          <label for="validationCustom05" className="form-label">
+          <label htmlFor="validationCustom05" className="form-label">
             Password
           </label>
           <input
@@ -108,7 +110,7 @@ export const Login = () => {
         </button>
       </div>
       <div className="col-12">
-          <label className="form-check-label" for="invalidCheck">
+          <label className="form-check-label" htmlFor="invalidCheck">
             <a className="nav-link forgetpass" href="/">Forgot password</a>
           </label>
           <div>

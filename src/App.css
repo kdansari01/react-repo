@@ -7,12 +7,23 @@ body{
     overflow-x: hidden;
     background: linear-gradient(to right, skyblue,rgb(220, 220, 243));
 }
+.navbar{
+    display: block;
+    /* background-color: rgb(39, 36, 36); */
+    position: sticky;
+    top: 0;
+}
+
+
+
 
 .carousel-inner{
     /* margin-top: 20px;  */
     min-width: 100%;
     height: 500px;
 
+    /* z-index: -1; */
+    overflow: scroll;
 }
 
 .blogs{
@@ -35,16 +46,25 @@ body{
  /* sinup and login css */
 
 .singupform{
-    position: relative;
-    top: 50px;
+    /* position: relative; */
+    /* overflow: hidden; */
+    margin-bottom: 30px;
+    margin-top: 50px;
     float: right;
-    right: 50px;
+    margin-right: 50px;
     width: 500px;
     min-height: auto;
     border-radius: 10px;
-    box-shadow: 10px 5px 20px gray;
+    box-shadow: 10px 10px 30px rgba(85, 80, 80, 0.534);
     padding: 10px;
-    margin-bottom: 10px;
+    /* overflow: scroll; */
+
+    /* z-index: -1; */
+    
+}
+.singupform:hover{
+
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.959);
     
 }
 .headsingup{
@@ -64,47 +84,52 @@ color: darkred;
 
 /* contact us css */
 
-.contactUs{
-    min-width: 100px;
-    height: 500px;
-}
-.contact-head{
-    text-align: center;
-    margin-top: 30px;
-    color: red;
+
+.contact-img{
     position: relative;
-    /* animation: mymove 5s ease-in-out; */
+    left: 40%;
+
+    max-width: 20%;
+    height: auto;
+    border-radius: 330px;
+    
 }
-/* @keyframes mymove{
-    from{left:0px}
-    to{left:300px}
-    from{right: 0px;}
-    to{right: 300px;}
-} */
-.contact-move{
-    position: relative;
-    animation: mymove 5s ease-in-out infinite;
+.social-logo{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    
 }
-@keyframes mymove{
-   0% {right: 0px; }
-   25% {right: 300px;}
-   /* 50% {right: 150px;} */
-   75% {right: 300px;}
-   100%{right: 0px;}
-}
-.text-message{
-    position: relative;
-    float: right;
-    bottom: 200px;
-    box-shadow: 5px 10px 20px;
-    min-height: 400px;
-    width: 300px;
-    padding-left: 10px;
+.logo{
+    width: 80px;
+    height: 80px;
 
 }
-.getInTouch{
-    position: relative;
-    text-align: center;
-    top: 40px;
-    right: 30px;
+.logo-insta:hover{
+    color: red;
 }
+.logo-git:hover{
+    color: black;
+
+}
+.move-head{
+    position: relative;
+    animation: mymove 5s linear infinite ;
+}
+
+@keyframes mymove {
+    0%   {left:0px;}
+    25%  {left:150px;}
+    50%  {left:100px;}
+    75%  {left:50px;}
+    100% {left:0px;}  
+  }
+
+
+ /* @keyframes mymove{
+   0% {left: 0px;}
+   50% {left: 100px;}
+   75% {right: 100px;}
+   100% {right: 150px;}
+}  */
+

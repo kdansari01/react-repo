@@ -9,10 +9,8 @@ export const Navbar = () => {
   const { global } = useContext(GlobalContext)
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-dark 
-
-">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-dark">
+        <div className="container-fluid nav-sticky">
           <a className="navbar-brand" href="/">
             {/* <img className="img-fluid" src="./image/logo.png"/> */}
           </a>
