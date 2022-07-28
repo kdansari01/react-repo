@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+
+.calculator-grid {
+  justify-content: center;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 / -1;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.previous{
+  color: rgba(255, 255, 255, 0.904);
+  font-size: 1.5rem;
+}
+.current{
+  color:white;
+  font-size: 2.5rem;
+}
